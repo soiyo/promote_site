@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- 
+{% if form.errors %}
+<p>아이디 또는 비밀번호가 틀립니다. 다시 시도해주세요.</p>
+{% endif %} -->
+
+<form method="post" action="{% url 'accounts:signup' %}">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <td>{{ form.username.label_tag }} {{ form.username }} 150자 이하 문자, 숫자, @ . + - - _ 만 가능 </td>
+        </tr>
+        <tr>
+            <td>{{ form.password1.label_tag }} {{ form.password1 }}
+                <li>다른 개인정보와 유사한 비밀번호는 사용 불가</li>
+                <li>비밀번호는 최소 8자 이상</li>
+                <li>통상적으로 자주 사용되는 비밀번호는 사용할 수 없음</li>
+                <li>숫자로만 이루어진 비밀번호는 사용할 수 없음</li>
+            </td>
+        </tr>
+        <tr>
+            <td>{{ form.password2.label_tag }} {{ form.password2 }} 확인을 위해 이전과 동일한 비밀번호를 입력하세요.</td>
+        </tr>
+        <tr>
+            <td>{{ form.email.label_tag }} {{ form.email }}</td>
+        </tr>
+    </table>
+    <input type="submit" value="회원가입">
+</form>
+<a href = "{% url 'accounts:login' %}">login 화면으로 이동</a>
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Small Business - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'styles.css' %}" rel="stylesheet" type="text/css"/>
+        <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- base.html, navbar.html, footer.html은 공통으로 쓰는 파일이기 때문에 templates 바로 아래에 만든다. -->
+        <!-- header와 footer는 어떤 페이지에 접속하든 화면의 상단과 하단에 위치하도록 템플릿화 하는게 효율적 -->
+        {% include "navbar.html" %}
+        {% block content %}
+        {% endblock %}
+        {% include "footer.html" %}
+    </body>
+</html>
