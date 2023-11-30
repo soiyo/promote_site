@@ -7,7 +7,8 @@
 
 <form method="post" action="{% url 'accounts:signup' %}">
     {% csrf_token %}
-    <table>
+    {{ form.as_p }}
+    <!-- <table>
         <tr>
             <td>{{ form.username.label_tag }} {{ form.username }} 150자 이하 문자, 숫자, @ . + - - _ 만 가능 </td>
         </tr>
@@ -26,6 +27,8 @@
             <td>{{ form.email.label_tag }} {{ form.email }}</td>
         </tr>
     </table>
+</form> -->
+<form>
     <input type="submit" value="회원가입">
 </form>
 <a href = "{% url 'accounts:login' %}">login 화면으로 이동</a>
