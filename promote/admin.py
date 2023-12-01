@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import MainContent, Comment
+from .models import MainContent
 
 # Register your models here.
 admin.site.register(MainContent)
-admin.site.register(Comment)
