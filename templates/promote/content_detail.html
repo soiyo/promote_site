@@ -19,7 +19,7 @@
                     <div class="fw-bold">
                         {{comment.author.username}} &nbsp {{comment.create_date}}
                         <!--microsecond가 달라서  comment.create_date 와  comment.modify_date 결과값 항상 다르게 나옴  -->
-                        {% if comment.create_date.second == comment.modify_date.second %} 
+                        {% if comment.create_date.second != comment.modify_date.second %} 
                         / 수정일자 : {{comment.modify_date}} 
                         {{comment.create_date.hour}}:{{comment.create_date.minute}}:{{comment.create_date.second}}:{{comment.create_date.microsecond}} 
                         {{comment.modify_date.hour}}:{{comment.modify_date.minute}}:{{comment.modify_date.second}}:{{comment.modify_date.microsecond}} 
