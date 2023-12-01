@@ -5,31 +5,24 @@
 * acoounts app 추가 : login, signup 페이지 추가
 * 상품 상세보기 페이지 추가 
 
----
 / 메인 페이지
 ![2주차](static/img/mainpage.png)
 
----
 /company 회사 소개 페이지
 ![2주차](static/img/company.png)
 
----
 /promote 상품 정보 페이지
 ![2주차](static/img/promote.png)
 
----
 /promote/1 상품 상세정보 페이지
 ![2주차](static/img/promote_1.png)
 
----
 /login 로그인 페이지
 ![2주차](static/img/login.png)
 
----
 /signup 회원가입 페이지
 ![2주차](static/img/signup.png)
 
----
 /admin 회원가입자 확인
 ![2주차](static/img/admin.png)
 
