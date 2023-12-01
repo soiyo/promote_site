@@ -19,6 +19,7 @@ microsecond를 DateTimeField 필드에 들어가지 않게 하는 방법이나 �
 1. /promote/int:content_id 
 </br>
 상품 정보 페이지 - 댓글 게시, 수정, 삭제 기능 추가
+
 ![2주차](static/img/promote_2.png)
 
 * #### submit 버튼 클릭 시
